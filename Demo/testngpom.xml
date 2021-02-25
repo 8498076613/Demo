@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+		<listener class-name="com.pom.base.TestListener" />
+	</listeners>
+	<parameter name="browserType" value="chrome" />
+	<parameter name="appURL" value="http://demo-store.seleniumacademy.com/" />
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.pom.test.BillingPageTest"/>
+      <class name="com.pom.test.HomePageTest"/>
+    
+     
+      <class name="com.pom.test.CartPageTest"/>
+      <class name="com.pom.test.OrderonfirmationPageTest"/>
+      
+      <class name="com.pom.test.ProductPageTest"/>
+     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
